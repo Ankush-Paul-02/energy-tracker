@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="HttpHistory">
+    <option name="httpHistories">
+      <map>
+        <entry key="0">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;username&quot;: &quot;dev&quot;,&#10;  &quot;email&quot;: &quot;ankushpaul198@gmail.com&quot;,&#10;  &quot;address&quot;: &quot;Kolkata&quot;,&#10;  &quot;isAlerting&quot;: false,&#10;  &quot;energyAlertingThreshold&quot;: 0&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8081" />
+              <option name="id" value="0" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="{&quot;username&quot;:&quot;dev&quot;,&quot;email&quot;:&quot;ankushpaul198@gmail.com&quot;,&quot;address&quot;:&quot;Kolkata&quot;,&quot;energyAlertingThreshold&quot;:0.0,&quot;alerting&quot;:false}" />
+              <option name="time" value="2026-05-21 10:30:32" />
+              <option name="uri" value="/api/v1/users/create" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="1">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;username&quot;: &quot;dev&quot;,&#10;  &quot;email&quot;: &quot;ankushpaul198@gmail.com&quot;,&#10;  &quot;address&quot;: &quot;Kolkata&quot;,&#10;  &quot;isAlerting&quot;: false,&#10;  &quot;energyAlertingThreshold&quot;: 0&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8081" />
+              <option name="id" value="1" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Thu May 21 10:31:03 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;div&gt;User with: ankushpaul198@gmail.com already exists&lt;/div&gt;&lt;div style='white-space:pre-wrap;'&gt;java.lang.RuntimeException: User with: ankushpaul198@gmail.com already exists&#10;&#9;at com.paul.userservice.service.UserService.createUser(UserService.java:24)&#10;&#9;at com.paul.userservice.controller.UserController.createUser(UserController.java:23)&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#10;&#9;at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)&#10;&#9;at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)&#10;&#9;at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)&#10;&#9;at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)&#10;&#9;at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)&#10;&#9;at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)&#10;&#9;at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)&#10;&#9;at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)&#10;&#9;at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)&#10;&#9;at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)&#10;&#9;at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)&#10;&#9;at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)&#10;&#9;at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)&#10;&#9;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)&#10;&#9;at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)&#10;&#9;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)&#10;&#9;at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)&#10;&#9;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)&#10;&#9;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)&#10;&#9;at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)&#10;&#9;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)&#10;&#9;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)&#10;&#9;at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)&#10;&#9;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)&#10;&#9;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)&#10;&#9;at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)&#10;&#9;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)&#10;&#9;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)&#10;&#9;at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)&#10;&#9;at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)&#10;&#9;at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)&#10;&#9;at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)&#10;&#9;at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)&#10;&#9;at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)&#10;&#9;at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)&#10;&#9;at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)&#10;&#9;at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)&#10;&#9;at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)&#10;&#9;at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)&#10;&#9;at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)&#10;&#9;at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)&#10;&#9;at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)&#10;&#9;at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)&#10;&#9;at java.base/java.lang.Thread.run(Thread.java:1583)&#10;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
+              <option name="time" value="2026-05-21 10:31:03" />
+              <option name="uri" value="/api/v1/users/create" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="2">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8081" />
+              <option name="id" value="2" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map>
+                  <entry key="id" value="0" />
+                </map>
+              </option>
+              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Thu May 21 10:36:33 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;div&gt;User with id: 0 does not exist&lt;/div&gt;&lt;div style='white-space:pre-wrap;'&gt;java.lang.RuntimeException: User with id: 0 does not exist&#10;&#9;at com.paul.userservice.service.UserService.getUserById(UserService.java:52)&#10;&#9;at com.paul.userservice.controller.UserController.getUserById(UserController.java:26)&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#10;&#9;at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)&#10;&#9;at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)&#10;&#9;at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)&#10;&#9;at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)&#10;&#9;at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)&#10;&#9;at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)&#10;&#9;at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)&#10;&#9;at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)&#10;&#9;at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)&#10;&#9;at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)&#10;&#9;at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)&#10;&#9;at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)&#10;&#9;at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)&#10;&#9;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)&#10;&#9;at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)&#10;&#9;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)&#10;&#9;at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)&#10;&#9;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)&#10;&#9;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)&#10;&#9;at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)&#10;&#9;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)&#10;&#9;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)&#10;&#9;at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)&#10;&#9;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)&#10;&#9;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)&#10;&#9;at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)&#10;&#9;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)&#10;&#9;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)&#10;&#9;at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)&#10;&#9;at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)&#10;&#9;at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)&#10;&#9;at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)&#10;&#9;at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)&#10;&#9;at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)&#10;&#9;at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)&#10;&#9;at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)&#10;&#9;at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)&#10;&#9;at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)&#10;&#9;at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)&#10;&#9;at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)&#10;&#9;at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)&#10;&#9;at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)&#10;&#9;at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)&#10;&#9;at java.base/java.lang.Thread.run(Thread.java:1583)&#10;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
+              <option name="time" value="2026-05-21 10:36:33" />
+              <option name="uri" value="/api/v1/users/{id}" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="3">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8081" />
+              <option name="id" value="3" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map>
+                  <entry key="id" value="1" />
+                </map>
+              </option>
+              <option name="res" value="{&quot;id&quot;:1,&quot;username&quot;:&quot;dev&quot;,&quot;email&quot;:&quot;ankushpaul198@gmail.com&quot;,&quot;address&quot;:&quot;Kolkata&quot;,&quot;energyAlertingThreshold&quot;:0.0,&quot;alerting&quot;:false}" />
+              <option name="time" value="2026-05-21 10:36:46" />
+              <option name="uri" value="/api/v1/users/{id}" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="4">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;username&quot;: &quot;&quot;,&#10;  &quot;email&quot;: &quot;&quot;,&#10;  &quot;address&quot;: &quot;&quot;,&#10;  &quot;isAlerting&quot;: false,&#10;  &quot;energyAlertingThreshold&quot;: 0&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8081" />
+              <option name="id" value="4" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="{&quot;id&quot;:2,&quot;username&quot;:&quot;&quot;,&quot;email&quot;:&quot;&quot;,&quot;address&quot;:&quot;&quot;,&quot;energyAlertingThreshold&quot;:0.0,&quot;alerting&quot;:false}" />
+              <option name="time" value="2026-05-21 10:49:18" />
+              <option name="uri" value="/api/v1/users/create" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="5">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8081" />
+              <option name="id" value="5" />
+              <option name="method" value="DELETE" />
+              <option name="params">
+                <map>
+                  <entry key="id" value="2" />
+                </map>
+              </option>
+              <option name="res" value="User deleted successfully!" />
+              <option name="time" value="2026-05-21 10:49:35" />
+              <option name="uri" value="/api/v1/users/{id}" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="6">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8081" />
+              <option name="id" value="6" />
+              <option name="method" value="DELETE" />
+              <option name="params">
+                <map>
+                  <entry key="id" value="2" />
+                </map>
+              </option>
+              <option name="res" value="{&quot;data&quot;:null,&quot;message&quot;:&quot;User with id: 2 does not exist&quot;,&quot;status&quot;:&quot;404 NOT_FOUND&quot;}" />
+              <option name="time" value="2026-05-21 10:49:41" />
+              <option name="uri" value="/api/v1/users/{id}" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="7">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8081" />
+              <option name="id" value="7" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map>
+                  <entry key="id" value="1" />
+                </map>
+              </option>
+              <option name="res" value="{&quot;id&quot;:1,&quot;username&quot;:&quot;dev&quot;,&quot;email&quot;:&quot;ankushpaul198@gmail.com&quot;,&quot;address&quot;:&quot;Kolkata&quot;,&quot;energyAlertingThreshold&quot;:0.0,&quot;alerting&quot;:false}" />
+              <option name="time" value="2026-05-21 10:49:52" />
+              <option name="uri" value="/api/v1/users/{id}" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="8">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8081" />
+              <option name="id" value="8" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map>
+                  <entry key="id" value="1" />
+                </map>
+              </option>
+              <option name="res" value="{&quot;data&quot;:{&quot;id&quot;:1,&quot;username&quot;:&quot;dev&quot;,&quot;email&quot;:&quot;ankushpaul198@gmail.com&quot;,&quot;address&quot;:&quot;Kolkata&quot;,&quot;energyAlertingThreshold&quot;:0.0,&quot;alerting&quot;:false},&quot;status&quot;:200,&quot;message&quot;:&quot;User fetched successfully&quot;}" />
+              <option name="time" value="2026-05-21 10:54:26" />
+              <option name="uri" value="/api/v1/users/{id}" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="9">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8081" />
+              <option name="id" value="9" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map>
+                  <entry key="id" value="1" />
+                </map>
+              </option>
+              <option name="res" value="{&quot;data&quot;:{&quot;id&quot;:1,&quot;username&quot;:&quot;dev&quot;,&quot;email&quot;:&quot;ankushpaul198@gmail.com&quot;,&quot;address&quot;:&quot;Kolkata&quot;,&quot;energyAlertingThreshold&quot;:0.0,&quot;alerting&quot;:false},&quot;status&quot;:200,&quot;message&quot;:&quot;User fetched successfully&quot;}" />
+              <option name="time" value="2026-05-21 11:10:04" />
+              <option name="uri" value="/api/v1/users/{id}" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="10">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8081" />
+              <option name="id" value="10" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map>
+                  <entry key="id" value="1" />
+                </map>
+              </option>
+              <option name="res" value="{&quot;data&quot;:{&quot;id&quot;:1,&quot;username&quot;:&quot;dev&quot;,&quot;email&quot;:&quot;ankushpaul198@gmail.com&quot;,&quot;address&quot;:&quot;Kolkata&quot;,&quot;energyAlertingThreshold&quot;:0.0,&quot;alerting&quot;:false},&quot;status&quot;:200,&quot;message&quot;:&quot;User fetched successfully&quot;}" />
+              <option name="time" value="2026-05-21 11:15:30" />
+              <option name="uri" value="/api/v1/users/1" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="11">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;username&quot;: &quot;bristi&quot;,&#10;  &quot;email&quot;: &quot;bristi@gmail.com&quot;,&#10;  &quot;address&quot;: &quot;Kolkata&quot;,&#10;  &quot;isAlerting&quot;: false,&#10;  &quot;energyAlertingThreshold&quot;: 0&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8081" />
+              <option name="id" value="11" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="{&quot;data&quot;:{&quot;id&quot;:3,&quot;username&quot;:&quot;bristi&quot;,&quot;email&quot;:&quot;bristi@gmail.com&quot;,&quot;address&quot;:&quot;Kolkata&quot;,&quot;energyAlertingThreshold&quot;:0.0,&quot;alerting&quot;:false},&quot;status&quot;:201,&quot;message&quot;:&quot;User created successfully&quot;}" />
+              <option name="time" value="2026-05-21 11:22:19" />
+              <option name="uri" value="/api/v1/users/create" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="12">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8081" />
+              <option name="id" value="12" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="{&quot;data&quot;:[{&quot;id&quot;:1,&quot;username&quot;:&quot;dev&quot;,&quot;email&quot;:&quot;ankushpaul198@gmail.com&quot;,&quot;address&quot;:&quot;Kolkata&quot;,&quot;energyAlertingThreshold&quot;:0.0,&quot;alerting&quot;:false},{&quot;id&quot;:3,&quot;username&quot;:&quot;bristi&quot;,&quot;email&quot;:&quot;bristi@gmail.com&quot;,&quot;address&quot;:&quot;Kolkata&quot;,&quot;energyAlertingThreshold&quot;:0.0,&quot;alerting&quot;:false}],&quot;status&quot;:200,&quot;message&quot;:&quot;Users fetched successfully&quot;}" />
+              <option name="time" value="2026-05-21 11:26:58" />
+              <option name="uri" value="/api/v1/users/all" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="13">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;name&quot;: &quot;Boat Speaker&quot;,&#10;  &quot;type&quot;: &quot;SPEAKER&quot;,&#10;  &quot;location&quot;: &quot;Living room&quot;,&#10;  &quot;userId&quot;: 1&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8081" />
+              <option name="id" value="13" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="{&quot;data&quot;:null,&quot;status&quot;:500,&quot;message&quot;:&quot;Something went wrong,&quot;}" />
+              <option name="time" value="2026-05-21 12:08:22" />
+              <option name="uri" value="/api/v1/devices/create" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="14">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;name&quot;: &quot;&quot;,&#10;  &quot;type&quot;: &quot;SPEAKER&quot;,&#10;  &quot;location&quot;: &quot;&quot;,&#10;  &quot;userId&quot;: 0&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8082/api/v1/devices/create" />
+              <option name="id" value="14" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="{&quot;data&quot;:null,&quot;status&quot;:400,&quot;message&quot;:&quot;could not execute statement [ERROR: insert or update on table \&quot;devices\&quot; violates foreign key constraint \&quot;fk_devices_user\&quot;\n  Detail: Key (user_id)=(0) is not present in table \&quot;users\&quot;.] [insert into devices (location,name,type,user_id) values (?,?,?,?)]; SQL [insert into devices (location,name,type,user_id) values (?,?,?,?)]; constraint [fk_devices_user]&quot;}" />
+              <option name="time" value="2026-05-21 12:09:40" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="15">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8081" />
+              <option name="id" value="15" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="{&quot;data&quot;:[{&quot;id&quot;:1,&quot;username&quot;:&quot;dev&quot;,&quot;email&quot;:&quot;ankushpaul198@gmail.com&quot;,&quot;address&quot;:&quot;Kolkata&quot;,&quot;energyAlertingThreshold&quot;:0.0,&quot;alerting&quot;:false},{&quot;id&quot;:3,&quot;username&quot;:&quot;bristi&quot;,&quot;email&quot;:&quot;bristi@gmail.com&quot;,&quot;address&quot;:&quot;Kolkata&quot;,&quot;energyAlertingThreshold&quot;:0.0,&quot;alerting&quot;:false}],&quot;status&quot;:200,&quot;message&quot;:&quot;Users fetched successfully&quot;}" />
+              <option name="time" value="2026-05-21 12:10:37" />
+              <option name="uri" value="/api/v1/users/all" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="16">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;name&quot;: &quot;Boat Speaker&quot;,&#10;  &quot;type&quot;: &quot;SPEAKER&quot;,&#10;  &quot;location&quot;: &quot;Living room&quot;,&#10;  &quot;userId&quot;: 1&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:8082/api/v1/devices/create" />
+              <option name="id" value="16" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="{&quot;data&quot;:{&quot;id&quot;:2,&quot;name&quot;:&quot;Boat Speaker&quot;,&quot;type&quot;:&quot;SPEAKER&quot;,&quot;location&quot;:&quot;Living room&quot;,&quot;userId&quot;:1},&quot;status&quot;:201,&quot;message&quot;:&quot;Device created successfully&quot;}" />
+              <option name="time" value="2026-05-21 12:11:06" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="17">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8082/api/v1/devices" />
+              <option name="id" value="17" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="{&quot;data&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;Boat Speaker&quot;,&quot;type&quot;:&quot;SPEAKER&quot;,&quot;location&quot;:&quot;Living room&quot;,&quot;userId&quot;:1}],&quot;status&quot;:200,&quot;message&quot;:&quot;Devices fetched successfully&quot;}" />
+              <option name="time" value="2026-05-21 12:11:47" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
