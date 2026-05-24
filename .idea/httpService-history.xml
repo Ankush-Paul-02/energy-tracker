@@ -400,9 +400,6 @@
               <option name="host" value="http://127.0.0.1:8083/api/v1/ingestion/ingest" />
               <option name="id" value="18" />
               <option name="method" value="POST" />
-              <option name="params">
-                <map />
-              </option>
               <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Fri May 22 03:40:47 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Bad Request, status=400).&lt;/div&gt;&lt;div&gt;JSON parse error: Cannot map `null` into type `double` (set `DeserializationFeature.FAIL_ON_NULL_FOR_PRIMITIVES` to &amp;#39;false&amp;#39; to allow)&lt;/div&gt;&lt;div style='white-space:pre-wrap;'&gt;org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot map `null` into type `double` (set `DeserializationFeature.FAIL_ON_NULL_FOR_PRIMITIVES` to &amp;#39;false&amp;#39; to allow)&#10;&#9;at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:363)&#10;&#9;at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.read(AbstractJacksonHttpMessageConverter.java:319)&#10;&#9;at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:203)&#10;&#9;at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:181)&#10;&#9;at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:156)&#10;&#9;at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)&#10;&#9;at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224)&#10;&#9;at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:174)&#10;&#9;at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)&#10;&#9;at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)&#10;&#9;at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)&#10;&#9;at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)&#10;&#9;at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)&#10;&#9;at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)&#10;&#9;at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)&#10;&#9;at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)&#10;&#9;at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)&#10;&#9;at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)&#10;&#9;at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)&#10;&#9;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)&#10;&#9;at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)&#10;&#9;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)&#10;&#9;at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)&#10;&#9;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)&#10;&#9;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)&#10;&#9;at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)&#10;&#9;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)&#10;&#9;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)&#10;&#9;at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)&#10;&#9;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)&#10;&#9;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)&#10;&#9;at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)&#10;&#9;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)&#10;&#9;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)&#10;&#9;at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)&#10;&#9;at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)&#10;&#9;at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)&#10;&#9;at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)&#10;&#9;at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)&#10;&#9;at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)&#10;&#9;at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)&#10;&#9;at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)&#10;&#9;at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)&#10;&#9;at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)&#10;&#9;at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)&#10;&#9;at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)&#10;&#9;at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)&#10;&#9;at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)&#10;&#9;at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)&#10;&#9;at java.base/java.lang.Thread.run(Thread.java:1583)&#10;Caused by: tools.jackson.databind.exc.MismatchedInputException: Cannot map `null` into type `double` (set `DeserializationFeature.FAIL_ON_NULL_FOR_PRIMITIVES` to &amp;#39;false&amp;#39; to allow)&#10; at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #89] (through reference chain: com.paul.ingestionservice.dto.EnergyUsesDto[&amp;quot;energyConsumption&amp;quot;])&#10;&#9;at tools.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:67)&#10;&#9;at tools.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1839)&#10;&#9;at tools.jackson.databind.DeserializationContext.handleNullForPrimitives(DeserializationContext.java:1467)&#10;&#9;at tools.jackson.databind.deser.jdk.NumberDeserializers$PrimitiveOrWrapperDeserializer.getNullValue(NumberDeserializers.java:168)&#10;&#9;at tools.jackson.databind.ValueDeserializer.getAbsentValue(ValueDeserializer.java:384)&#10;&#9;at tools.jackson.databind.deser.bean.PropertyValueBuffer._findMissing(PropertyValueBuffer.java:298)&#10;&#9;at tools.jackson.databind.deser.bean.PropertyValueBuffer.getParameters(PropertyValueBuffer.java:213)&#10;&#9;at tools.jackson.databind.deser.ValueInstantiator.createFromObjectWith(ValueInstantiator.java:271)&#10;&#9;at tools.jackson.databind.deser.bean.PropertyBasedCreator.build(PropertyBasedCreator.java:294)&#10;&#9;at tools.jackson.databind.deser.bean.BeanDeserializer._deserializeUsingPropertyBased(BeanDeserializer.java:803)&#10;&#9;at tools.jackson.databind.deser.bean.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1503)&#10;&#9;at tools.jackson.databind.deser.bean.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:598)&#10;&#9;at tools.jackson.databind.deser.bean.BeanDeserializer.deserialize(BeanDeserializer.java:200)&#10;&#9;at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:266)&#10;&#9;at tools.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1888)&#10;&#9;at tools.jackson.databind.ObjectReader.readValue(ObjectReader.java:1270)&#10;&#9;at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:352)&#10;&#9;... 49 more&#10;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
               <option name="time" value="2026-05-22 03:40:47" />
               <option name="uri" value="" />
@@ -425,11 +422,58 @@
               <option name="host" value="http://127.0.0.1:8083/api/v1/ingestion/ingest" />
               <option name="id" value="19" />
               <option name="method" value="POST" />
-              <option name="params">
-                <map />
-              </option>
               <option name="res" value="" />
               <option name="time" value="2026-05-22 03:41:41" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="20">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8082/api/v1/devices/{id}" />
+              <option name="id" value="20" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map>
+                  <entry key="id" value="1" />
+                </map>
+              </option>
+              <option name="res" value="{&quot;data&quot;:null,&quot;status&quot;:404,&quot;message&quot;:&quot;Device not found with id: 1&quot;}" />
+              <option name="time" value="2026-05-24 13:24:56" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="21">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8082/api/v1/devices/2" />
+              <option name="id" value="21" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map>
+                  <entry key="id" value="1" />
+                </map>
+              </option>
+              <option name="res" value="{&quot;data&quot;:{&quot;id&quot;:2,&quot;name&quot;:&quot;Boat Speaker&quot;,&quot;type&quot;:&quot;SPEAKER&quot;,&quot;location&quot;:&quot;Living room&quot;,&quot;userId&quot;:1},&quot;status&quot;:200,&quot;message&quot;:&quot;Device fetched successfully&quot;}" />
+              <option name="time" value="2026-05-24 13:25:06" />
               <option name="uri" value="" />
             </ReqHistory>
           </value>

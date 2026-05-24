@@ -10,6 +10,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
@@ -40,7 +41,7 @@ public class ParallelDataSimulator implements CommandLineRunner {
         ((ThreadPoolExecutor) executorService).setCorePoolSize(parallelThreads);
     }
 
-    //    @Scheduled(fixedRateString = "${simulation.fixed-rate-ms}")
+    @Scheduled(fixedRateString = "${simulation.fixed-rate-ms}")
     public void sendMockData() {
         int batchSize = requestPerInterval / parallelThreads;
         int remainder = requestPerInterval % parallelThreads;
