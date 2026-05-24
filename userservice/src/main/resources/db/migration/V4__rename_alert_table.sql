@@ -1,0 +1,1 @@
+ALTER TABLE alert RENAME TO alerts
