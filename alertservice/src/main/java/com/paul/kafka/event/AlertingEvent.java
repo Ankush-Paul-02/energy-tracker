@@ -1,4 +1,4 @@
-package com.example.kafka.event;
+package com.paul.kafka.event;
 
 import lombok.Builder;
 

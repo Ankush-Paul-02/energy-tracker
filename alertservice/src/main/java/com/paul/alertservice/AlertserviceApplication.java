@@ -1,4 +1,4 @@
-package com.example.alertservice;
+package com.paul.alertservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
