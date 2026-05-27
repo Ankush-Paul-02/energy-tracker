@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/alertservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apigateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/deviceservice/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ingestionservice/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/insightservice/src/main/java" charset="UTF-8" />

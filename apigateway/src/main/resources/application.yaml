@@ -1,0 +1,44 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: apigateway
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8091/realms/et-security-realm
+
+management:
+  endpoint:
+    health:
+      show-details: ALWAYS
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include:
+          - info
+          - health
+          - metrics
+          - circuitbreakers
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        register-health-indicator: true # means that the circuit breaker will register itself as a health
+        sliding-window-type: COUNT_BASED # means that the circuit breaker will use a count-based sliding window
+        sliding-window-size: 8
+        failure-rate-threshold: 20
+        minimum-number-of-calls: 4
+        wait-duration-in-open-state: 5s
+        permitted-number-of-calls-in-half-open-state: 2
+        automatic-transition-from-open-to-half-open-enabled: true
+
+keycloak:
+  auth:
+    jwk-set-uri: http://localhost:8091/realms/et-security-realm/protocol/openid-connect/certs
+security:
+  exclude-urls: /actuator/**, /login**

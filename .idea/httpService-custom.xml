@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CustomApi">
+    <option name="customApis">
+      <map>
+        <entry key="http://127.0.0.1:9000/api/v1/devices/4">
+          <value>
+            <CustomApi>
+              <option name="description" value="api-gateway-device-service" />
+              <option name="headers">
+                <map />
+              </option>
+              <option name="method" value="GET" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="requestBody" value="" />
+              <option name="url" value="http://127.0.0.1:9000/api/v1/devices/4" />
+            </CustomApi>
+          </value>
+        </entry>
+        <entry key="http://127.0.0.1:9000/api/v1/users/1">
+          <value>
+            <CustomApi>
+              <option name="description" value="api-gateway-user-service" />
+              <option name="headers">
+                <map />
+              </option>
+              <option name="method" value="GET" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="requestBody" value="" />
+              <option name="url" value="http://127.0.0.1:9000/api/v1/users/1" />
+            </CustomApi>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
