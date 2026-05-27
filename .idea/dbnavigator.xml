@@ -32,10 +32,7 @@
     <prerequisites />
   </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
-    <mapping file-url="file://$PROJECT_DIR$/userservice/src/main/resources/db/migration/V2__create_device_table.psql" connection-id="virtual-postgres-connection" session-id="" current-schema="" />
-    <mapping file-url="file://$PROJECT_DIR$/userservice/src/main/resources/db/migration/V3__create_alert_table.psql" connection-id="virtual-postgres-connection" session-id="" current-schema="" />
-    <mapping file-url="file://$PROJECT_DIR$/userservice/src/main/resources/db/migration/V1__create_users_table.psql" connection-id="virtual-postgres-connection" session-id="" current-schema="" />
-    <mapping file-url="file://$PROJECT_DIR$/userservice/src/main/resources/db/migration/V4__rename_alert_table.sql" connection-id="virtual-mysql-connection" session-id="" current-schema="" />
+    <mapping file-url="file://$PROJECT_DIR$/userservice/src/main/resources/db/migration/V4__rename_alert_table.sql" connection-id="virtual-mysql-connection" session-id="MAIN" current-schema="" />
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections />

@@ -436,9 +436,6 @@
               <option name="fileNames">
                 <array />
               </option>
-              <option name="headers">
-                <map />
-              </option>
               <option name="host" value="http://127.0.0.1:8082/api/v1/devices/{id}" />
               <option name="id" value="20" />
               <option name="method" value="GET" />
@@ -461,9 +458,6 @@
               <option name="fileNames">
                 <array />
               </option>
-              <option name="headers">
-                <map />
-              </option>
               <option name="host" value="http://127.0.0.1:8082/api/v1/devices/2" />
               <option name="id" value="21" />
               <option name="method" value="GET" />
@@ -474,6 +468,56 @@
               </option>
               <option name="res" value="{&quot;data&quot;:{&quot;id&quot;:2,&quot;name&quot;:&quot;Boat Speaker&quot;,&quot;type&quot;:&quot;SPEAKER&quot;,&quot;location&quot;:&quot;Living room&quot;,&quot;userId&quot;:1},&quot;status&quot;:200,&quot;message&quot;:&quot;Device fetched successfully&quot;}" />
               <option name="time" value="2026-05-24 13:25:06" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="22">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8082/api/v1/devices/user/1" />
+              <option name="id" value="22" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map>
+                  <entry key="userId" value="0" />
+                </map>
+              </option>
+              <option name="res" value="{&quot;data&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;Boat Speaker&quot;,&quot;type&quot;:&quot;SPEAKER&quot;,&quot;location&quot;:&quot;Living room&quot;,&quot;userId&quot;:1,&quot;energyConsumed&quot;:0.0},{&quot;id&quot;:12,&quot;name&quot;:&quot;device10&quot;,&quot;type&quot;:&quot;CAMERA&quot;,&quot;location&quot;:&quot;location10&quot;,&quot;userId&quot;:1,&quot;energyConsumed&quot;:0.0},{&quot;id&quot;:22,&quot;name&quot;:&quot;device20&quot;,&quot;type&quot;:&quot;THERMOSTAT&quot;,&quot;location&quot;:&quot;location20&quot;,&quot;userId&quot;:1,&quot;energyConsumed&quot;:0.0},{&quot;id&quot;:32,&quot;name&quot;:&quot;device30&quot;,&quot;type&quot;:&quot;SPEAKER&quot;,&quot;location&quot;:&quot;location30&quot;,&quot;userId&quot;:1,&quot;energyConsumed&quot;:0.0},{&quot;id&quot;:42,&quot;name&quot;:&quot;device40&quot;,&quot;type&quot;:&quot;CAMERA&quot;,&quot;location&quot;:&quot;location40&quot;,&quot;userId&quot;:1,&quot;energyConsumed&quot;:0.0},{&quot;id&quot;:52,&quot;name&quot;:&quot;device50&quot;,&quot;type&quot;:&quot;THERMOSTAT&quot;,&quot;location&quot;:&quot;location50&quot;,&quot;userId&quot;:1,&quot;energyConsumed&quot;:0.0},{&quot;id&quot;:62,&quot;name&quot;:&quot;device60&quot;,&quot;type&quot;:&quot;SPEAKER&quot;,&quot;location&quot;:&quot;location60&quot;,&quot;userId&quot;:1,&quot;energyConsumed&quot;:0.0},{&quot;id&quot;:72,&quot;name&quot;:&quot;device70&quot;,&quot;type&quot;:&quot;CAMERA&quot;,&quot;location&quot;:&quot;location70&quot;,&quot;userId&quot;:1,&quot;energyConsumed&quot;:0.0},{&quot;id&quot;:82,&quot;name&quot;:&quot;device80&quot;,&quot;type&quot;:&quot;THERMOSTAT&quot;,&quot;location&quot;:&quot;location80&quot;,&quot;userId&quot;:1,&quot;energyConsumed&quot;:0.0},{&quot;id&quot;:92,&quot;name&quot;:&quot;device90&quot;,&quot;type&quot;:&quot;SPEAKER&quot;,&quot;location&quot;:&quot;location90&quot;,&quot;userId&quot;:1,&quot;energyConsumed&quot;:0.0},{&quot;id&quot;:102,&quot;name&quot;:&quot;device100&quot;,&quot;type&quot;:&quot;CAMERA&quot;,&quot;location&quot;:&quot;location100&quot;,&quot;userId&quot;:1,&quot;energyConsumed&quot;:0.0},{&quot;id&quot;:112,&quot;name&quot;:&quot;device110&quot;,&quot;type&quot;:&quot;THERMOSTAT&quot;,&quot;location&quot;:&quot;location110&quot;,&quot;userId&quot;:1,&quot;energyConsumed&quot;:0.0},{&quot;id&quot;:122,&quot;name&quot;:&quot;device120&quot;,&quot;type&quot;:&quot;SPEAKER&quot;,&quot;location&quot;:&quot;location120&quot;,&quot;userId&quot;:1,&quot;energyConsumed&quot;:0.0},{&quot;id&quot;:132,&quot;name&quot;:&quot;device130&quot;,&quot;type&quot;:&quot;CAMERA&quot;,&quot;location&quot;:&quot;location130&quot;,&quot;userId&quot;:1,&quot;energyConsumed&quot;:0.0},{&quot;id&quot;:142,&quot;name&quot;:&quot;device140&quot;,&quot;type&quot;:&quot;THERMOSTAT&quot;,&quot;location&quot;:&quot;location140&quot;,&quot;userId&quot;:1,&quot;energyConsumed&quot;:0.0},{&quot;id&quot;:152,&quot;name&quot;:&quot;device150&quot;,&quot;type&quot;:&quot;SPEAKER&quot;,&quot;location&quot;:&quot;location150&quot;,&quot;userId&quot;:1,&quot;energyConsumed&quot;:0.0},{&quot;id&quot;:162,&quot;name&quot;:&quot;device160&quot;,&quot;type&quot;:&quot;CAMERA&quot;,&quot;location&quot;:&quot;location160&quot;,&quot;userId&quot;:1,&quot;energyConsumed&quot;:0.0},{&quot;id&quot;:172,&quot;name&quot;:&quot;device170&quot;,&quot;type&quot;:&quot;THERMOSTAT&quot;,&quot;location&quot;:&quot;location170&quot;,&quot;userId&quot;:1,&quot;energyConsumed&quot;:0.0},{&quot;id&quot;:182,&quot;name&quot;:&quot;device180&quot;,&quot;type&quot;:&quot;SPEAKER&quot;,&quot;location&quot;:&quot;location180&quot;,&quot;userId&quot;:1,&quot;energyConsumed&quot;:0.0},{&quot;id&quot;:192,&quot;name&quot;:&quot;device190&quot;,&quot;type&quot;:&quot;CAMERA&quot;,&quot;location&quot;:&quot;location190&quot;,&quot;userId&quot;:1,&quot;energyConsumed&quot;:0.0},{&quot;id&quot;:202,&quot;name&quot;:&quot;device200&quot;,&quot;type&quot;:&quot;THERMOSTAT&quot;,&quot;location&quot;:&quot;location200&quot;,&quot;userId&quot;:1,&quot;energyConsumed&quot;:0.0}],&quot;status&quot;:200,&quot;message&quot;:&quot;All Devices fetched successfully for user: 1&quot;}" />
+              <option name="time" value="2026-05-25 01:36:38" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="23">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8086/api/v1/insights/overview/user/{userId}" />
+              <option name="id" value="23" />
+              <option name="method" value="GET" />
+              <option name="params">
+                <map>
+                  <entry key="userId" value="1" />
+                </map>
+              </option>
+              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon May 25 02:22:16 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
+              <option name="time" value="2026-05-25 02:22:16" />
               <option name="uri" value="" />
             </ReqHistory>
           </value>

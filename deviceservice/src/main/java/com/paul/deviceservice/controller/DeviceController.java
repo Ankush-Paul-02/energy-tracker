@@ -55,6 +55,17 @@ public class DeviceController {
                 ));
     }
 
+    @GetMapping("/user/{userId}")
+    public ResponseEntity<ApiResponse<List<DeviceResponseDto>>> getAllDevicesByUserId(@PathVariable Long userId) {
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(new ApiResponse<>(
+                        deviceService.getAllDevicesByUserId(userId),
+                        HttpStatus.OK.value(),
+                        "All Devices fetched successfully for user: " + userId
+                ));
+    }
+
     @PutMapping("/{id}")
     public ResponseEntity<ApiResponse<DeviceResponseDto>> updateDevice(
             @PathVariable Long id,

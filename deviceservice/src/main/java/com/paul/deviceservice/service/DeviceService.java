@@ -47,6 +47,12 @@ public class DeviceService {
                 .toList();
     }
 
+    public List<DeviceResponseDto> getAllDevicesByUserId(Long userId) {
+        return deviceRepository.findAllByUserId(userId)
+                .stream().map(this::buildDeviceResponseDto)
+                .toList();
+    }
+
     public DeviceResponseDto updateDevice(Long id, DeviceRequestDto deviceRequestDto) {
         Device device = deviceRepository.findById(id)
                 .orElseThrow(() -> new AppInfoException(
@@ -78,7 +84,7 @@ public class DeviceService {
         return DeviceResponseDto.builder()
                 .id(device.getId())
                 .name(device.getName())
-                .type(device.getType())
+                .type(device.getType().name())
                 .location(device.getLocation())
                 .userId(device.getUserId())
                 .build();
