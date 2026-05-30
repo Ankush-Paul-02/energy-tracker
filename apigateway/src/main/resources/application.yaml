@@ -37,8 +37,28 @@ resilience4j:
         permitted-number-of-calls-in-half-open-state: 2
         automatic-transition-from-open-to-half-open-enabled: true
 
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    urls:
+      - name: User Service
+        url: /docs/user-service/v3/api-docs
+
+      - name: Device Service
+        url: /docs/device-service/v3/api-docs
+
+      - name: Ingestion Service
+        url: /docs/ingestion-service/v3/api-docs
+
+      - name: Insight Service
+        url: /docs/insight-service/v3/api-docs
+
+      - name: Usage Service
+        url: /docs/usage-service/v3/api-docs
+
+  api-docs:
+    path: /v3/api-docs
+
 keycloak:
   auth:
     jwk-set-uri: http://localhost:8091/realms/et-security-realm/protocol/openid-connect/certs
-security:
-  exclude-urls: /actuator/**, /login**
