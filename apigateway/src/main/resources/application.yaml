@@ -10,20 +10,25 @@ spring:
           issuer-uri: http://localhost:8091/realms/et-security-realm
 
 management:
-  endpoint:
-    health:
-      show-details: ALWAYS
+  metrics:
+    tags:
+      application: ${spring.application.name}
   health:
     circuitbreakers:
       enabled: true
+  endpoint:
+    health:
+      show-details: ALWAYS
   endpoints:
     web:
       exposure:
         include:
-          - info
           - health
+          - info
+          - prometheus
           - metrics
           - circuitbreakers
+
 resilience4j:
   circuitbreaker:
     configs:

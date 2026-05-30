@@ -15,6 +15,21 @@ spring:
         num-predict: 500
         num-ctx: 2048
 
+management:
+  metrics:
+    tags:
+      application: ${spring.application.name}
+  endpoint:
+    health:
+      show-details: WHEN_AUTHORIZED
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - info
+          - prometheus
+
 usage:
   service:
     url: http://localhost:8084/api/v1/usage

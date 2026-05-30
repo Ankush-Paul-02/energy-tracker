@@ -16,3 +16,18 @@ spring:
     properties:
       hibernate:
       format_sql: true
+
+management:
+  metrics:
+    tags:
+      application: ${spring.application.name}
+  endpoint:
+    health:
+      show-details: WHEN_AUTHORIZED
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - info
+          - prometheus

@@ -13,9 +13,9 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - ./postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
-      - pg-data:/var/lib/postgresql/data
-      - pg-logs:/var/log/postgresql
+      - ./docker/postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./docker/postgres/data:/var/lib/postgresql/data
+      - ./docker/postgres/logs:/var/log/postgresql
 
   #
   # Kafka service configuration
@@ -90,7 +90,7 @@ services:
       KAFKA_NUM_PARTITIONS: 1
 
     volumes:
-      - ./kafka-data:/var/lib/kafka/data
+      - ./docker/kafka/data:/var/lib/kafka/data
 
   kafka-ui:
     container_name: kafka-ui
@@ -119,7 +119,7 @@ services:
       - DOCKER_INFLUXDB_INIT_RETENTION=1w
       - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=my-token
     volumes:
-      - ./influxdb_data:/var/lib/influxdb2
+      - ./docker/influxdb/data:/var/lib/influxdb2
 
   mailpit:
     container_name: mailpit
@@ -139,7 +139,7 @@ services:
     ports:
       - "5433:5432"
     volumes:
-      - keycloak-pg-data:/var/lib/postgresql/data
+      - ./docker/keycloak-db/data:/var/lib/postgresql/data
 
   keycloak:
     container_name: keycloak
@@ -156,12 +156,45 @@ services:
     ports:
       - "8091:8080"
     volumes:
-      - ./keycloak/realms:/opt/keycloak/data/import
+      - ./docker/keycloak/realms:/opt/keycloak/data/import
     depends_on:
       - keycloak-db
+
+  prometheus:
+    image: prom/prometheus:v3.1.0
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.retention.time=5d
+      - --web.enable-lifecycle
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana:11.4.0
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: admin
+      GF_USERS_ALLOW_SIGN_UP: "false"
+      GF_SERVER_ROOT_URL: http://localhost:3000
+    volumes:
+      - ./docker/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./docker/grafana/data:/var/lib/grafana
+    depends_on:
+      - prometheus
+    restart: unless-stopped
 
 volumes:
   pg-data:
   pg-logs:
   kafka-data:
   keycloak-pg-data:
+  grafana-data:
